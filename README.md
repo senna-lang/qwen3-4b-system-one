@@ -4,6 +4,19 @@ Ask several questions about one record in **a single forward pass**. This reposi
 
 > Experimental research artifact. English-oriented; not for high-stakes decisions. Not affiliated with Qwen/Alibaba Cloud, DeepSeek, or TypeSafe.
 
+## Speed
+
+Answering N questions about one record in a single tree-masked forward pass, versus N separate forward passes:
+
+__omp_shell("[Latency vs question count on Apple M2](docs/latency.png)")
+
+| Questions per record | 2 | 4 | 8 | 16 |
+| --- | ---: | ---: | ---: | ---: |
+| Speedup, MLX | 1.77× | 2.42× | 3.01× | **3.42×** |
+| Speedup, PyTorch MPS | 1.67× | 2.19× | 2.65× | **2.95×** |
+
+Apple M2 (24 GB), fp16, public fictional fixture, median request latency. Reproduce with `scripts/bench_latency.py`; details in [docs/RESULTS.md](docs/RESULTS.md#latency-tree-masked-packing-vs-one-forward-per-question).
+
 ## How it works
 
 ```mermaid
@@ -86,6 +99,7 @@ The tests use a stand-in tokenizer and need no model weights. They check request
 
 - `scripts/check_branch_isolation.py` — a branch's probabilities do not change when other branches are added, reordered, or removed (max diff 0.0074 vs 0.84 without the tree mask).
 - `scripts/compare_backends.py` — PyTorch and MLX agree (42/42 argmax, max diff 0.016).
+- `scripts/bench_latency.py` — request latency of tree-masked packing vs one forward per question.
 
 See [docs/RESULTS.md](docs/RESULTS.md) for commands and numbers, and [docs/METHOD.md](docs/METHOD.md) for the prompt, packing, and mask.
 

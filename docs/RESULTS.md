@@ -43,6 +43,29 @@ python scripts/compare_backends.py compare outputs/torch.jsonl outputs/mlx.jsonl
 
 The default tolerance is 0.02. Results on other hardware (for example CUDA in bf16) may differ more and have not been measured here.
 
+### Latency: tree-masked packing vs one forward per question
+
+```bash
+python scripts/bench_latency.py --backend mlx   --output outputs/latency-mlx.json
+python scripts/bench_latency.py --backend torch --output outputs/latency-torch.json
+```
+
+Each fixture record is asked N questions (its own branches, repeated cyclically). The same N questions are answered either in one tree-masked forward pass or in N separate forward passes that each re-encode the record. Model loading is excluded; times are medians over 16 records × 3 repeats.
+
+__omp_shell("[Latency vs question count](latency.png)")
+
+Measured on an Apple M2 (24 GB), fp16, no other GPU workload (2026-10-02):
+
+| Questions | Packed tokens | MLX tree | MLX per-question | Speedup | MPS tree | MPS per-question | Speedup |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 82 vs 82 | 0.62 s | 0.62 s | **1.00×** | 0.80 s | 0.79 s | **0.99×** |
+| 2 | 106.5 vs 156.5 | 0.69 s | 1.23 s | **1.77×** | 0.93 s | 1.55 s | **1.67×** |
+| 4 | 167 vs 316 | 1.11 s | 2.70 s | **2.42×** | 1.41 s | 3.08 s | **2.19×** |
+| 8 | 281 vs 626.5 | 1.91 s | 5.73 s | **3.01×** | 2.37 s | 6.30 s | **2.65×** |
+| 16 | 517 vs 1260 | 3.49 s | 11.92 s | **3.42×** | 4.30 s | 12.67 s | **2.95×** |
+
+The gain comes from encoding the record once: at N = 16 the packed sequence is 517 tokens instead of 1,260. Records in this fixture are short (one or two sentences), so longer records should benefit more; that has not been measured. Absolute times are for a laptop GPU and are not a deployment latency claim; CUDA has not been measured.
+
 ## Reported evaluation (not reproducible)
 
 These results were measured on data that is not distributed (training texts and teacher outputs). They are reported for context and cannot be re-run from this repository.
