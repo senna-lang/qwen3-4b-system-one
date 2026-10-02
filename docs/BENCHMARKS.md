@@ -33,6 +33,20 @@ Option labels are the datasets' own label names.
 
 None of these datasets were used to train or select the adapter (training sources: AMI/ICSI via QMSum, GitHub issues, NASA ASRS, NHTSA, public regulations). AG News, SST-5, and BoolQ were used in earlier experiments of this project with a different, discarded model design; they did not influence this adapter.
 
+## Results (2026-10-02, RTX 4090, torch 2.10.0+cu128)
+
+| Task | Base | LoRA | LoRA − base (95% CI) |
+| --- | ---: | ---: | :---: |
+| AG News | 0.900 | 0.896 | -0.4 pt (-1.8 to +1.0) |
+| MASSIVE scenario (en-US) | 0.620 | 0.604 | -1.6 pt (-4.4 to +1.0) |
+| MNLI (matched) | 0.824 | 0.860 | +3.6 pt (+1.2 to +6.0) |
+| BoolQ | 0.880 | 0.896 | +1.6 pt (-0.2 to +3.6) |
+| SST-5 | 0.390 | 0.474 | +8.4 pt (+4.6 to +12.2) |
+
+SST-5 mean absolute error: base 0.82, LoRA 0.65 levels.
+
+The adapter improves SST-5 and MNLI with intervals that exclude zero. AG News, MASSIVE, and BoolQ differences are within noise; AG News and MASSIVE point estimates are slightly lower than the base model. These results were obtained in a single run of the protocol above.
+
 ## Run
 
 ```bash

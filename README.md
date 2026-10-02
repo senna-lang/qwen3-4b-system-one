@@ -4,9 +4,23 @@ Ask several questions about one record in **a single forward pass**. This reposi
 
 > Experimental research artifact. English-oriented; not for high-stakes decisions. Not affiliated with Qwen/Alibaba Cloud, DeepSeek, or TypeSafe.
 
+## Accuracy
+
+Zero-shot accuracy on public datasets that were not used for training or model selection (500 rows each, sampled with a fixed seed; protocol fixed before the run):
+
+| Dataset | Task | Type | Accuracy | 95% CI |
+| --- | --- | --- | ---: | :---: |
+| AG News | news topic | choice, 4 options | **0.896** | 0.868–0.922 |
+| MASSIVE (en-US) | voice-assistant scenario | choice, 18 options | **0.604** | 0.564–0.646 |
+| MNLI (matched) | entailment / neutral / contradiction | choice, 3 options | **0.860** | 0.828–0.888 |
+| BoolQ | yes/no question about a passage | noul | **0.896** | 0.868–0.922 |
+| SST-5 | 5-level sentiment | score, 5 levels | **0.474** | 0.432–0.516 |
+
+SST-5 mean absolute error: 0.65 levels. One canonical option order, single forward pass per request, PyTorch on an RTX 4090. Protocol, base-model comparison, and row-level predictions: [docs/BENCHMARKS.md](docs/BENCHMARKS.md) and [`results/accuracy/`](results/accuracy/).
+
 ## Speed
 
-Answering N questions about one record in a single tree-masked forward pass, versus N separate forward passes:
+For reference, answering N questions about one record in a single tree-masked forward pass, versus N separate forward passes:
 
 __omp_shell("[Latency vs question count on Apple M2](docs/latency.png)")
 
