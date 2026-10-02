@@ -52,7 +52,21 @@ python scripts/bench_latency.py --backend torch --output outputs/latency-torch.j
 
 Each fixture record is asked N questions (its own branches, repeated cyclically). The same N questions are answered either in one tree-masked forward pass or in N separate forward passes that each re-encode the record. Model loading is excluded; times are medians over 16 records × 3 repeats.
 
-__omp_shell("[Latency vs question count](latency.png)")
+#### NVIDIA RTX 4090 (2026-10-02)
+
+Median request latency, PyTorch 2.10.0+cu128, public fixture (16 records × 3 repeats), model loading excluded:
+
+| Questions per record | 1 | 2 | 4 | 8 | 16 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| **One tree-masked forward pass** | 70 ms | 70 ms | 70 ms | 72 ms | 75 ms |
+| One forward pass per question | 70 ms | 139 ms | 275 ms | 552 ms | 1,106 ms |
+| Speedup | 1.00× | 1.98× | 3.96× | 7.72× | 14.84× |
+
+On the GPU a forward pass over a few hundred tokens costs about 70 ms regardless of length, so packed requests stay flat while one-pass-per-question grows linearly. Fixture records are one or two sentences; long-document latency has not been measured.
+
+#### Apple M2
+
+![Latency vs question count](latency.png)
 
 Measured on an Apple M2 (24 GB), fp16, no other GPU workload (2026-10-02):
 

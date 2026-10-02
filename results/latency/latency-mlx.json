@@ -1,0 +1,1974 @@
+{
+  "meta": {
+    "backend": "mlx",
+    "machine": "arm64",
+    "platform": "macOS-26.4.1-arm64-arm-64bit",
+    "processor": "arm",
+    "records": 16,
+    "repeats": 3
+  },
+  "summary": [
+    {
+      "questions": 1,
+      "tree_ms_median": 620.3,
+      "independent_ms_median": 620.0,
+      "speedup": 1.0,
+      "tree_tokens_median": 82.0,
+      "independent_tokens_median": 82.0
+    },
+    {
+      "questions": 2,
+      "tree_ms_median": 692.5,
+      "independent_ms_median": 1228.6,
+      "speedup": 1.77,
+      "tree_tokens_median": 106.5,
+      "independent_tokens_median": 156.5
+    },
+    {
+      "questions": 4,
+      "tree_ms_median": 1114.1,
+      "independent_ms_median": 2698.5,
+      "speedup": 2.42,
+      "tree_tokens_median": 167.0,
+      "independent_tokens_median": 316.0
+    },
+    {
+      "questions": 8,
+      "tree_ms_median": 1905.3,
+      "independent_ms_median": 5731.6,
+      "speedup": 3.01,
+      "tree_tokens_median": 281.0,
+      "independent_tokens_median": 626.5
+    },
+    {
+      "questions": 16,
+      "tree_ms_median": 3489.5,
+      "independent_ms_median": 11921.0,
+      "speedup": 3.42,
+      "tree_tokens_median": 517.0,
+      "independent_tokens_median": 1260.0
+    }
+  ],
+  "rows": [
+    {
+      "id": "bakery-oven",
+      "questions": 1,
+      "tree_ms": 536.2090000417084,
+      "independent_ms": 625.550374854356,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 1,
+      "tree_ms": 739.5036660600454,
+      "independent_ms": 772.295624949038,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 1,
+      "tree_ms": 758.5182080511004,
+      "independent_ms": 733.1634580623358,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "library-return",
+      "questions": 1,
+      "tree_ms": 706.6375419963151,
+      "independent_ms": 717.961624963209,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "library-return",
+      "questions": 1,
+      "tree_ms": 683.4713339339942,
+      "independent_ms": 683.7391250301152,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "library-return",
+      "questions": 1,
+      "tree_ms": 746.7469160910696,
+      "independent_ms": 665.783166885376,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 1,
+      "tree_ms": 708.4752498194575,
+      "independent_ms": 662.1089580003172,
+      "tree_tokens": 81,
+      "independent_tokens": 81
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 1,
+      "tree_ms": 670.1134170871228,
+      "independent_ms": 678.2671250402927,
+      "tree_tokens": 81,
+      "independent_tokens": 81
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 1,
+      "tree_ms": 679.9810838419944,
+      "independent_ms": 677.495334064588,
+      "tree_tokens": 81,
+      "independent_tokens": 81
+    },
+    {
+      "id": "bike-repair",
+      "questions": 1,
+      "tree_ms": 681.0884999576956,
+      "independent_ms": 679.0141251403838,
+      "tree_tokens": 84,
+      "independent_tokens": 84
+    },
+    {
+      "id": "bike-repair",
+      "questions": 1,
+      "tree_ms": 668.5121250338852,
+      "independent_ms": 671.5368339791894,
+      "tree_tokens": 84,
+      "independent_tokens": 84
+    },
+    {
+      "id": "bike-repair",
+      "questions": 1,
+      "tree_ms": 672.7461249101907,
+      "independent_ms": 670.6059998832643,
+      "tree_tokens": 84,
+      "independent_tokens": 84
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 1,
+      "tree_ms": 670.4142082016915,
+      "independent_ms": 671.3789170607924,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 1,
+      "tree_ms": 673.873582854867,
+      "independent_ms": 666.4276251103729,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 1,
+      "tree_ms": 662.9284168593585,
+      "independent_ms": 666.4433749392629,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 1,
+      "tree_ms": 671.5636248700321,
+      "independent_ms": 670.7998330239207,
+      "tree_tokens": 87,
+      "independent_tokens": 87
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 1,
+      "tree_ms": 673.4494578558952,
+      "independent_ms": 667.3912908881903,
+      "tree_tokens": 87,
+      "independent_tokens": 87
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 1,
+      "tree_ms": 670.9249999839813,
+      "independent_ms": 671.0050420369953,
+      "tree_tokens": 87,
+      "independent_tokens": 87
+    },
+    {
+      "id": "school-bus",
+      "questions": 1,
+      "tree_ms": 641.6299580596387,
+      "independent_ms": 645.5147920642048,
+      "tree_tokens": 75,
+      "independent_tokens": 75
+    },
+    {
+      "id": "school-bus",
+      "questions": 1,
+      "tree_ms": 639.0781251247972,
+      "independent_ms": 631.6233328543603,
+      "tree_tokens": 75,
+      "independent_tokens": 75
+    },
+    {
+      "id": "school-bus",
+      "questions": 1,
+      "tree_ms": 630.8945000637323,
+      "independent_ms": 626.0900418274105,
+      "tree_tokens": 75,
+      "independent_tokens": 75
+    },
+    {
+      "id": "garden-water",
+      "questions": 1,
+      "tree_ms": 629.7414170112461,
+      "independent_ms": 629.3055838905275,
+      "tree_tokens": 78,
+      "independent_tokens": 78
+    },
+    {
+      "id": "garden-water",
+      "questions": 1,
+      "tree_ms": 618.9698330126703,
+      "independent_ms": 620.0119161512703,
+      "tree_tokens": 78,
+      "independent_tokens": 78
+    },
+    {
+      "id": "garden-water",
+      "questions": 1,
+      "tree_ms": 622.422750107944,
+      "independent_ms": 620.0641670729965,
+      "tree_tokens": 78,
+      "independent_tokens": 78
+    },
+    {
+      "id": "app-login",
+      "questions": 1,
+      "tree_ms": 625.8361248765141,
+      "independent_ms": 624.2865829262882,
+      "tree_tokens": 84,
+      "independent_tokens": 84
+    },
+    {
+      "id": "app-login",
+      "questions": 1,
+      "tree_ms": 621.6200001072139,
+      "independent_ms": 616.1751670297235,
+      "tree_tokens": 84,
+      "independent_tokens": 84
+    },
+    {
+      "id": "app-login",
+      "questions": 1,
+      "tree_ms": 618.1940000969917,
+      "independent_ms": 619.930624961853,
+      "tree_tokens": 84,
+      "independent_tokens": 84
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 1,
+      "tree_ms": 612.7459169365466,
+      "independent_ms": 614.2329999711365,
+      "tree_tokens": 77,
+      "independent_tokens": 77
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 1,
+      "tree_ms": 614.1945410054177,
+      "independent_ms": 609.7387499175966,
+      "tree_tokens": 77,
+      "independent_tokens": 77
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 1,
+      "tree_ms": 604.3430001009256,
+      "independent_ms": 606.0410419013351,
+      "tree_tokens": 77,
+      "independent_tokens": 77
+    },
+    {
+      "id": "office-heat",
+      "questions": 1,
+      "tree_ms": 611.9711247738451,
+      "independent_ms": 613.617124967277,
+      "tree_tokens": 83,
+      "independent_tokens": 83
+    },
+    {
+      "id": "office-heat",
+      "questions": 1,
+      "tree_ms": 615.9529171418399,
+      "independent_ms": 616.7175411246717,
+      "tree_tokens": 83,
+      "independent_tokens": 83
+    },
+    {
+      "id": "office-heat",
+      "questions": 1,
+      "tree_ms": 616.5242078714073,
+      "independent_ms": 615.7658752053976,
+      "tree_tokens": 83,
+      "independent_tokens": 83
+    },
+    {
+      "id": "train-delay",
+      "questions": 1,
+      "tree_ms": 612.5277089886367,
+      "independent_ms": 610.5653329286724,
+      "tree_tokens": 83,
+      "independent_tokens": 83
+    },
+    {
+      "id": "train-delay",
+      "questions": 1,
+      "tree_ms": 611.1382080707699,
+      "independent_ms": 609.7619999200106,
+      "tree_tokens": 83,
+      "independent_tokens": 83
+    },
+    {
+      "id": "train-delay",
+      "questions": 1,
+      "tree_ms": 607.2754170745611,
+      "independent_ms": 610.3707919828594,
+      "tree_tokens": 83,
+      "independent_tokens": 83
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 1,
+      "tree_ms": 604.280750034377,
+      "independent_ms": 604.8234580084682,
+      "tree_tokens": 77,
+      "independent_tokens": 77
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 1,
+      "tree_ms": 602.0388749893755,
+      "independent_ms": 598.4452918637544,
+      "tree_tokens": 77,
+      "independent_tokens": 77
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 1,
+      "tree_ms": 596.6285420581698,
+      "independent_ms": 597.096832934767,
+      "tree_tokens": 77,
+      "independent_tokens": 77
+    },
+    {
+      "id": "museum-light",
+      "questions": 1,
+      "tree_ms": 600.2557501196861,
+      "independent_ms": 606.2715000007302,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "museum-light",
+      "questions": 1,
+      "tree_ms": 612.390749854967,
+      "independent_ms": 611.6644588764757,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "museum-light",
+      "questions": 1,
+      "tree_ms": 609.401416964829,
+      "independent_ms": 607.9244161956012,
+      "tree_tokens": 82,
+      "independent_tokens": 82
+    },
+    {
+      "id": "water-bill",
+      "questions": 1,
+      "tree_ms": 603.600834030658,
+      "independent_ms": 602.3091659881175,
+      "tree_tokens": 81,
+      "independent_tokens": 81
+    },
+    {
+      "id": "water-bill",
+      "questions": 1,
+      "tree_ms": 599.6315421070904,
+      "independent_ms": 602.0053748507053,
+      "tree_tokens": 81,
+      "independent_tokens": 81
+    },
+    {
+      "id": "water-bill",
+      "questions": 1,
+      "tree_ms": 606.3927081413567,
+      "independent_ms": 605.0341669470072,
+      "tree_tokens": 81,
+      "independent_tokens": 81
+    },
+    {
+      "id": "concert-sound",
+      "questions": 1,
+      "tree_ms": 613.8105830177665,
+      "independent_ms": 607.7750839758664,
+      "tree_tokens": 85,
+      "independent_tokens": 85
+    },
+    {
+      "id": "concert-sound",
+      "questions": 1,
+      "tree_ms": 600.5017079878598,
+      "independent_ms": 596.5699590742588,
+      "tree_tokens": 85,
+      "independent_tokens": 85
+    },
+    {
+      "id": "concert-sound",
+      "questions": 1,
+      "tree_ms": 599.9334999360144,
+      "independent_ms": 600.5804578308016,
+      "tree_tokens": 85,
+      "independent_tokens": 85
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 2,
+      "tree_ms": 684.2705830931664,
+      "independent_ms": 1189.7930828854442,
+      "tree_tokens": 117,
+      "independent_tokens": 170
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 2,
+      "tree_ms": 684.1541251633316,
+      "independent_ms": 1196.4047499932349,
+      "tree_tokens": 117,
+      "independent_tokens": 170
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 2,
+      "tree_ms": 684.3782919459045,
+      "independent_ms": 1201.9400000572205,
+      "tree_tokens": 117,
+      "independent_tokens": 170
+    },
+    {
+      "id": "library-return",
+      "questions": 2,
+      "tree_ms": 680.8192911557853,
+      "independent_ms": 1202.1511250641197,
+      "tree_tokens": 115,
+      "independent_tokens": 160
+    },
+    {
+      "id": "library-return",
+      "questions": 2,
+      "tree_ms": 678.8163338787854,
+      "independent_ms": 1202.5555409491062,
+      "tree_tokens": 115,
+      "independent_tokens": 160
+    },
+    {
+      "id": "library-return",
+      "questions": 2,
+      "tree_ms": 678.9851661305875,
+      "independent_ms": 1204.771582968533,
+      "tree_tokens": 115,
+      "independent_tokens": 160
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 2,
+      "tree_ms": 680.9240831062198,
+      "independent_ms": 1213.8153340201825,
+      "tree_tokens": 107,
+      "independent_tokens": 156
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 2,
+      "tree_ms": 682.3757500387728,
+      "independent_ms": 1216.2818750366569,
+      "tree_tokens": 107,
+      "independent_tokens": 156
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 2,
+      "tree_ms": 692.8539171349257,
+      "independent_ms": 1211.9154590182006,
+      "tree_tokens": 107,
+      "independent_tokens": 156
+    },
+    {
+      "id": "bike-repair",
+      "questions": 2,
+      "tree_ms": 675.1928750891238,
+      "independent_ms": 1206.5335840452462,
+      "tree_tokens": 106,
+      "independent_tokens": 154
+    },
+    {
+      "id": "bike-repair",
+      "questions": 2,
+      "tree_ms": 675.520583987236,
+      "independent_ms": 1208.247208967805,
+      "tree_tokens": 106,
+      "independent_tokens": 154
+    },
+    {
+      "id": "bike-repair",
+      "questions": 2,
+      "tree_ms": 680.3062499966472,
+      "independent_ms": 1204.946249956265,
+      "tree_tokens": 106,
+      "independent_tokens": 154
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 2,
+      "tree_ms": 695.0266661588103,
+      "independent_ms": 1216.973332921043,
+      "tree_tokens": 117,
+      "independent_tokens": 168
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 2,
+      "tree_ms": 699.716208036989,
+      "independent_ms": 1219.6317091584206,
+      "tree_tokens": 117,
+      "independent_tokens": 168
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 2,
+      "tree_ms": 701.7595828510821,
+      "independent_ms": 1238.7996669858694,
+      "tree_tokens": 117,
+      "independent_tokens": 168
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 2,
+      "tree_ms": 695.0081251561642,
+      "independent_ms": 1241.8646670412272,
+      "tree_tokens": 109,
+      "independent_tokens": 168
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 2,
+      "tree_ms": 692.6842911634594,
+      "independent_ms": 1242.8402500227094,
+      "tree_tokens": 109,
+      "independent_tokens": 168
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 2,
+      "tree_ms": 700.7600420620292,
+      "independent_ms": 1246.1932920850813,
+      "tree_tokens": 109,
+      "independent_tokens": 168
+    },
+    {
+      "id": "school-bus",
+      "questions": 2,
+      "tree_ms": 689.0134171117097,
+      "independent_ms": 1214.5683749113232,
+      "tree_tokens": 99,
+      "independent_tokens": 144
+    },
+    {
+      "id": "school-bus",
+      "questions": 2,
+      "tree_ms": 688.3772499859333,
+      "independent_ms": 1209.922415902838,
+      "tree_tokens": 99,
+      "independent_tokens": 144
+    },
+    {
+      "id": "school-bus",
+      "questions": 2,
+      "tree_ms": 688.5007079690695,
+      "independent_ms": 1211.2827498931438,
+      "tree_tokens": 99,
+      "independent_tokens": 144
+    },
+    {
+      "id": "garden-water",
+      "questions": 2,
+      "tree_ms": 691.9802918564528,
+      "independent_ms": 1227.663500001654,
+      "tree_tokens": 111,
+      "independent_tokens": 159
+    },
+    {
+      "id": "garden-water",
+      "questions": 2,
+      "tree_ms": 692.2186249867082,
+      "independent_ms": 1229.4362499378622,
+      "tree_tokens": 111,
+      "independent_tokens": 159
+    },
+    {
+      "id": "garden-water",
+      "questions": 2,
+      "tree_ms": 703.3515418879688,
+      "independent_ms": 1238.6545420158654,
+      "tree_tokens": 111,
+      "independent_tokens": 159
+    },
+    {
+      "id": "app-login",
+      "questions": 2,
+      "tree_ms": 692.6830830052495,
+      "independent_ms": 1236.1822498496622,
+      "tree_tokens": 106,
+      "independent_tokens": 155
+    },
+    {
+      "id": "app-login",
+      "questions": 2,
+      "tree_ms": 690.4847079422325,
+      "independent_ms": 1233.2754998933524,
+      "tree_tokens": 106,
+      "independent_tokens": 155
+    },
+    {
+      "id": "app-login",
+      "questions": 2,
+      "tree_ms": 689.6542920731008,
+      "independent_ms": 1231.1786250211298,
+      "tree_tokens": 106,
+      "independent_tokens": 155
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 2,
+      "tree_ms": 687.6908328849822,
+      "independent_ms": 1209.2481669969857,
+      "tree_tokens": 99,
+      "independent_tokens": 143
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 2,
+      "tree_ms": 687.9129169974476,
+      "independent_ms": 1209.0940000489354,
+      "tree_tokens": 99,
+      "independent_tokens": 143
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 2,
+      "tree_ms": 687.9659169353545,
+      "independent_ms": 1222.2044169902802,
+      "tree_tokens": 99,
+      "independent_tokens": 143
+    },
+    {
+      "id": "office-heat",
+      "questions": 2,
+      "tree_ms": 696.6655410360545,
+      "independent_ms": 1240.256082965061,
+      "tree_tokens": 108,
+      "independent_tokens": 157
+    },
+    {
+      "id": "office-heat",
+      "questions": 2,
+      "tree_ms": 707.2405409999192,
+      "independent_ms": 1245.2324160840362,
+      "tree_tokens": 108,
+      "independent_tokens": 157
+    },
+    {
+      "id": "office-heat",
+      "questions": 2,
+      "tree_ms": 709.2558750882745,
+      "independent_ms": 1240.743833128363,
+      "tree_tokens": 108,
+      "independent_tokens": 157
+    },
+    {
+      "id": "train-delay",
+      "questions": 2,
+      "tree_ms": 701.2687909882516,
+      "independent_ms": 1241.531291976571,
+      "tree_tokens": 106,
+      "independent_tokens": 159
+    },
+    {
+      "id": "train-delay",
+      "questions": 2,
+      "tree_ms": 700.1128748524934,
+      "independent_ms": 1240.0472920853645,
+      "tree_tokens": 106,
+      "independent_tokens": 159
+    },
+    {
+      "id": "train-delay",
+      "questions": 2,
+      "tree_ms": 706.5683328546584,
+      "independent_ms": 1240.7738328911364,
+      "tree_tokens": 106,
+      "independent_tokens": 159
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 2,
+      "tree_ms": 698.8548750523478,
+      "independent_ms": 1241.3860000669956,
+      "tree_tokens": 99,
+      "independent_tokens": 147
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 2,
+      "tree_ms": 695.2969590201974,
+      "independent_ms": 1227.8373329900205,
+      "tree_tokens": 99,
+      "independent_tokens": 147
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 2,
+      "tree_ms": 689.0445409808308,
+      "independent_ms": 1219.9166249483824,
+      "tree_tokens": 99,
+      "independent_tokens": 147
+    },
+    {
+      "id": "museum-light",
+      "questions": 2,
+      "tree_ms": 697.3810829222202,
+      "independent_ms": 1253.690583165735,
+      "tree_tokens": 104,
+      "independent_tokens": 155
+    },
+    {
+      "id": "museum-light",
+      "questions": 2,
+      "tree_ms": 707.8022498171777,
+      "independent_ms": 1234.4506250228733,
+      "tree_tokens": 104,
+      "independent_tokens": 155
+    },
+    {
+      "id": "museum-light",
+      "questions": 2,
+      "tree_ms": 687.8784999717027,
+      "independent_ms": 1224.215499823913,
+      "tree_tokens": 104,
+      "independent_tokens": 155
+    },
+    {
+      "id": "water-bill",
+      "questions": 2,
+      "tree_ms": 690.0192920584232,
+      "independent_ms": 1235.6757500674576,
+      "tree_tokens": 103,
+      "independent_tokens": 151
+    },
+    {
+      "id": "water-bill",
+      "questions": 2,
+      "tree_ms": 707.4207081459463,
+      "independent_ms": 1260.094542056322,
+      "tree_tokens": 103,
+      "independent_tokens": 151
+    },
+    {
+      "id": "water-bill",
+      "questions": 2,
+      "tree_ms": 706.462207948789,
+      "independent_ms": 1261.546750087291,
+      "tree_tokens": 103,
+      "independent_tokens": 151
+    },
+    {
+      "id": "concert-sound",
+      "questions": 2,
+      "tree_ms": 708.0962501931936,
+      "independent_ms": 1260.649333940819,
+      "tree_tokens": 107,
+      "independent_tokens": 158
+    },
+    {
+      "id": "concert-sound",
+      "questions": 2,
+      "tree_ms": 708.4015419241041,
+      "independent_ms": 1263.4627500083297,
+      "tree_tokens": 107,
+      "independent_tokens": 158
+    },
+    {
+      "id": "concert-sound",
+      "questions": 2,
+      "tree_ms": 708.9812089689076,
+      "independent_ms": 1278.4695839509368,
+      "tree_tokens": 107,
+      "independent_tokens": 158
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 4,
+      "tree_ms": 1075.2013330347836,
+      "independent_ms": 2522.07158296369,
+      "tree_tokens": 169,
+      "independent_tokens": 328
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 4,
+      "tree_ms": 1049.4825409259647,
+      "independent_ms": 2514.923666138202,
+      "tree_tokens": 169,
+      "independent_tokens": 328
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 4,
+      "tree_ms": 1050.9663340635598,
+      "independent_ms": 2547.991707921028,
+      "tree_tokens": 169,
+      "independent_tokens": 328
+    },
+    {
+      "id": "library-return",
+      "questions": 4,
+      "tree_ms": 1074.2942921351641,
+      "independent_ms": 2547.749999910593,
+      "tree_tokens": 174,
+      "independent_tokens": 309
+    },
+    {
+      "id": "library-return",
+      "questions": 4,
+      "tree_ms": 1075.8221249561757,
+      "independent_ms": 2586.7549169342965,
+      "tree_tokens": 174,
+      "independent_tokens": 309
+    },
+    {
+      "id": "library-return",
+      "questions": 4,
+      "tree_ms": 1084.3914591241628,
+      "independent_ms": 2538.1742499303073,
+      "tree_tokens": 174,
+      "independent_tokens": 309
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 4,
+      "tree_ms": 1059.5297089312226,
+      "independent_ms": 2540.0651250965893,
+      "tree_tokens": 176,
+      "independent_tokens": 323
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 4,
+      "tree_ms": 1056.9412498734891,
+      "independent_ms": 2555.4468748159707,
+      "tree_tokens": 176,
+      "independent_tokens": 323
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 4,
+      "tree_ms": 1093.4399161487818,
+      "independent_ms": 2654.5340418815613,
+      "tree_tokens": 176,
+      "independent_tokens": 323
+    },
+    {
+      "id": "bike-repair",
+      "questions": 4,
+      "tree_ms": 1115.2281661052257,
+      "independent_ms": 2667.0055841095746,
+      "tree_tokens": 164,
+      "independent_tokens": 308
+    },
+    {
+      "id": "bike-repair",
+      "questions": 4,
+      "tree_ms": 1079.220750136301,
+      "independent_ms": 2595.54879181087,
+      "tree_tokens": 164,
+      "independent_tokens": 308
+    },
+    {
+      "id": "bike-repair",
+      "questions": 4,
+      "tree_ms": 1083.4398751612753,
+      "independent_ms": 2606.1641660053283,
+      "tree_tokens": 164,
+      "independent_tokens": 308
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 4,
+      "tree_ms": 1092.4624998588115,
+      "independent_ms": 2640.9441670402884,
+      "tree_tokens": 170,
+      "independent_tokens": 323
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 4,
+      "tree_ms": 1105.6744160596281,
+      "independent_ms": 2643.040624912828,
+      "tree_tokens": 170,
+      "independent_tokens": 323
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 4,
+      "tree_ms": 1110.4221669957042,
+      "independent_ms": 2633.715583011508,
+      "tree_tokens": 170,
+      "independent_tokens": 323
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 4,
+      "tree_ms": 1102.3416661191732,
+      "independent_ms": 2724.605082999915,
+      "tree_tokens": 173,
+      "independent_tokens": 350
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 4,
+      "tree_ms": 1145.1685829088092,
+      "independent_ms": 2769.413582980633,
+      "tree_tokens": 173,
+      "independent_tokens": 350
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 4,
+      "tree_ms": 1149.1785829421133,
+      "independent_ms": 2768.3479581028223,
+      "tree_tokens": 173,
+      "independent_tokens": 350
+    },
+    {
+      "id": "school-bus",
+      "questions": 4,
+      "tree_ms": 1133.4623750299215,
+      "independent_ms": 2752.384291961789,
+      "tree_tokens": 153,
+      "independent_tokens": 288
+    },
+    {
+      "id": "school-bus",
+      "questions": 4,
+      "tree_ms": 1100.5292918998748,
+      "independent_ms": 2648.963375017047,
+      "tree_tokens": 153,
+      "independent_tokens": 288
+    },
+    {
+      "id": "school-bus",
+      "questions": 4,
+      "tree_ms": 1098.506208974868,
+      "independent_ms": 2695.717457914725,
+      "tree_tokens": 153,
+      "independent_tokens": 288
+    },
+    {
+      "id": "garden-water",
+      "questions": 4,
+      "tree_ms": 1129.6777920797467,
+      "independent_ms": 2702.394957887009,
+      "tree_tokens": 163,
+      "independent_tokens": 307
+    },
+    {
+      "id": "garden-water",
+      "questions": 4,
+      "tree_ms": 1127.7710001450032,
+      "independent_ms": 2699.0381660871208,
+      "tree_tokens": 163,
+      "independent_tokens": 307
+    },
+    {
+      "id": "garden-water",
+      "questions": 4,
+      "tree_ms": 1131.0290419496596,
+      "independent_ms": 2707.7326672151685,
+      "tree_tokens": 163,
+      "independent_tokens": 307
+    },
+    {
+      "id": "app-login",
+      "questions": 4,
+      "tree_ms": 1144.742458127439,
+      "independent_ms": 2777.8300000354648,
+      "tree_tokens": 176,
+      "independent_tokens": 323
+    },
+    {
+      "id": "app-login",
+      "questions": 4,
+      "tree_ms": 1165.413459064439,
+      "independent_ms": 2782.8140419442207,
+      "tree_tokens": 176,
+      "independent_tokens": 323
+    },
+    {
+      "id": "app-login",
+      "questions": 4,
+      "tree_ms": 1147.6783328689635,
+      "independent_ms": 2762.7574999351054,
+      "tree_tokens": 176,
+      "independent_tokens": 323
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 4,
+      "tree_ms": 1126.3067501131445,
+      "independent_ms": 3257.5461249798536,
+      "tree_tokens": 154,
+      "independent_tokens": 286
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 4,
+      "tree_ms": 1314.168042037636,
+      "independent_ms": 3609.5242500305176,
+      "tree_tokens": 154,
+      "independent_tokens": 286
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 4,
+      "tree_ms": 1380.4037088993937,
+      "independent_ms": 3220.5727081745863,
+      "tree_tokens": 154,
+      "independent_tokens": 286
+    },
+    {
+      "id": "office-heat",
+      "questions": 4,
+      "tree_ms": 1177.354000043124,
+      "independent_ms": 2856.037124991417,
+      "tree_tokens": 179,
+      "independent_tokens": 326
+    },
+    {
+      "id": "office-heat",
+      "questions": 4,
+      "tree_ms": 1230.2387079689652,
+      "independent_ms": 2801.221791887656,
+      "tree_tokens": 179,
+      "independent_tokens": 326
+    },
+    {
+      "id": "office-heat",
+      "questions": 4,
+      "tree_ms": 1169.5847499649972,
+      "independent_ms": 2826.289082877338,
+      "tree_tokens": 179,
+      "independent_tokens": 326
+    },
+    {
+      "id": "train-delay",
+      "questions": 4,
+      "tree_ms": 1148.8340829964727,
+      "independent_ms": 2821.291167056188,
+      "tree_tokens": 159,
+      "independent_tokens": 318
+    },
+    {
+      "id": "train-delay",
+      "questions": 4,
+      "tree_ms": 1144.289124989882,
+      "independent_ms": 2801.4371250756085,
+      "tree_tokens": 159,
+      "independent_tokens": 318
+    },
+    {
+      "id": "train-delay",
+      "questions": 4,
+      "tree_ms": 1149.3487090338022,
+      "independent_ms": 2838.028334081173,
+      "tree_tokens": 159,
+      "independent_tokens": 318
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 4,
+      "tree_ms": 1158.2569170277566,
+      "independent_ms": 2765.074332943186,
+      "tree_tokens": 165,
+      "independent_tokens": 309
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 4,
+      "tree_ms": 1132.1464590728283,
+      "independent_ms": 2698.8458330743015,
+      "tree_tokens": 165,
+      "independent_tokens": 309
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 4,
+      "tree_ms": 1112.4921250157058,
+      "independent_ms": 2665.5164579860866,
+      "tree_tokens": 165,
+      "independent_tokens": 309
+    },
+    {
+      "id": "museum-light",
+      "questions": 4,
+      "tree_ms": 1111.7968340404332,
+      "independent_ms": 2707.697209203616,
+      "tree_tokens": 157,
+      "independent_tokens": 310
+    },
+    {
+      "id": "museum-light",
+      "questions": 4,
+      "tree_ms": 1101.6153329983354,
+      "independent_ms": 2672.3821670748293,
+      "tree_tokens": 157,
+      "independent_tokens": 310
+    },
+    {
+      "id": "museum-light",
+      "questions": 4,
+      "tree_ms": 1094.9375410564244,
+      "independent_ms": 2633.722250116989,
+      "tree_tokens": 157,
+      "independent_tokens": 310
+    },
+    {
+      "id": "water-bill",
+      "questions": 4,
+      "tree_ms": 1097.3096250090748,
+      "independent_ms": 2631.4119999296963,
+      "tree_tokens": 172,
+      "independent_tokens": 316
+    },
+    {
+      "id": "water-bill",
+      "questions": 4,
+      "tree_ms": 1112.1654999442399,
+      "independent_ms": 2671.738041099161,
+      "tree_tokens": 172,
+      "independent_tokens": 316
+    },
+    {
+      "id": "water-bill",
+      "questions": 4,
+      "tree_ms": 1119.5139579940587,
+      "independent_ms": 2698.234166018665,
+      "tree_tokens": 172,
+      "independent_tokens": 316
+    },
+    {
+      "id": "concert-sound",
+      "questions": 4,
+      "tree_ms": 1116.5992501191795,
+      "independent_ms": 2687.360916985199,
+      "tree_tokens": 163,
+      "independent_tokens": 316
+    },
+    {
+      "id": "concert-sound",
+      "questions": 4,
+      "tree_ms": 1113.0225830711424,
+      "independent_ms": 2706.760459113866,
+      "tree_tokens": 163,
+      "independent_tokens": 316
+    },
+    {
+      "id": "concert-sound",
+      "questions": 4,
+      "tree_ms": 1128.3960840664804,
+      "independent_ms": 2725.4762079101056,
+      "tree_tokens": 163,
+      "independent_tokens": 316
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 8,
+      "tree_ms": 1811.5518749691546,
+      "independent_ms": 5509.259917074814,
+      "tree_tokens": 291,
+      "independent_tokens": 662
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 8,
+      "tree_ms": 1870.4586660023779,
+      "independent_ms": 5666.152958991006,
+      "tree_tokens": 291,
+      "independent_tokens": 662
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 8,
+      "tree_ms": 1915.0989160407335,
+      "independent_ms": 5714.525165967643,
+      "tree_tokens": 291,
+      "independent_tokens": 662
+    },
+    {
+      "id": "library-return",
+      "questions": 8,
+      "tree_ms": 1943.4829580131918,
+      "independent_ms": 5739.015124971047,
+      "tree_tokens": 299,
+      "independent_tokens": 614
+    },
+    {
+      "id": "library-return",
+      "questions": 8,
+      "tree_ms": 1914.24116701819,
+      "independent_ms": 5604.913625167683,
+      "tree_tokens": 299,
+      "independent_tokens": 614
+    },
+    {
+      "id": "library-return",
+      "questions": 8,
+      "tree_ms": 1911.6960421670228,
+      "independent_ms": 5742.5885000266135,
+      "tree_tokens": 299,
+      "independent_tokens": 614
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 8,
+      "tree_ms": 1965.6704161316156,
+      "independent_ms": 5667.9641250520945,
+      "tree_tokens": 297,
+      "independent_tokens": 640
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 8,
+      "tree_ms": 1944.5329578593373,
+      "independent_ms": 5695.463291136548,
+      "tree_tokens": 297,
+      "independent_tokens": 640
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 8,
+      "tree_ms": 1938.051417004317,
+      "independent_ms": 5773.226666031405,
+      "tree_tokens": 297,
+      "independent_tokens": 640
+    },
+    {
+      "id": "bike-repair",
+      "questions": 8,
+      "tree_ms": 1931.0643339995295,
+      "independent_ms": 5831.960457842797,
+      "tree_tokens": 280,
+      "independent_tokens": 616
+    },
+    {
+      "id": "bike-repair",
+      "questions": 8,
+      "tree_ms": 1872.8110420051962,
+      "independent_ms": 5782.4677501339465,
+      "tree_tokens": 280,
+      "independent_tokens": 616
+    },
+    {
+      "id": "bike-repair",
+      "questions": 8,
+      "tree_ms": 1930.4531670641154,
+      "independent_ms": 5703.990458045155,
+      "tree_tokens": 280,
+      "independent_tokens": 616
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 8,
+      "tree_ms": 1893.9845419954509,
+      "independent_ms": 5686.951667070389,
+      "tree_tokens": 293,
+      "independent_tokens": 650
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 8,
+      "tree_ms": 1873.9264169707894,
+      "independent_ms": 5616.193042136729,
+      "tree_tokens": 293,
+      "independent_tokens": 650
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 8,
+      "tree_ms": 1883.0872080288827,
+      "independent_ms": 5661.522041074932,
+      "tree_tokens": 293,
+      "independent_tokens": 650
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 8,
+      "tree_ms": 1909.8918330855668,
+      "independent_ms": 5702.645334182307,
+      "tree_tokens": 281,
+      "independent_tokens": 694
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 8,
+      "tree_ms": 1861.5988329984248,
+      "independent_ms": 5634.065666934475,
+      "tree_tokens": 281,
+      "independent_tokens": 694
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 8,
+      "tree_ms": 1910.6671249028295,
+      "independent_ms": 5775.269625009969,
+      "tree_tokens": 281,
+      "independent_tokens": 694
+    },
+    {
+      "id": "school-bus",
+      "questions": 8,
+      "tree_ms": 1845.408583059907,
+      "independent_ms": 5460.787791991606,
+      "tree_tokens": 261,
+      "independent_tokens": 576
+    },
+    {
+      "id": "school-bus",
+      "questions": 8,
+      "tree_ms": 1855.8865829836577,
+      "independent_ms": 5523.0067919474095,
+      "tree_tokens": 261,
+      "independent_tokens": 576
+    },
+    {
+      "id": "school-bus",
+      "questions": 8,
+      "tree_ms": 1812.0150829199702,
+      "independent_ms": 5433.671375038102,
+      "tree_tokens": 261,
+      "independent_tokens": 576
+    },
+    {
+      "id": "garden-water",
+      "questions": 8,
+      "tree_ms": 1834.2862909194082,
+      "independent_ms": 5525.021458044648,
+      "tree_tokens": 281,
+      "independent_tokens": 617
+    },
+    {
+      "id": "garden-water",
+      "questions": 8,
+      "tree_ms": 1821.872458094731,
+      "independent_ms": 5488.391040824354,
+      "tree_tokens": 281,
+      "independent_tokens": 617
+    },
+    {
+      "id": "garden-water",
+      "questions": 8,
+      "tree_ms": 1834.7145000007004,
+      "independent_ms": 5561.034332960844,
+      "tree_tokens": 281,
+      "independent_tokens": 617
+    },
+    {
+      "id": "app-login",
+      "questions": 8,
+      "tree_ms": 1906.13191598095,
+      "independent_ms": 5734.641707967967,
+      "tree_tokens": 290,
+      "independent_tokens": 633
+    },
+    {
+      "id": "app-login",
+      "questions": 8,
+      "tree_ms": 1883.3676669746637,
+      "independent_ms": 5680.463458178565,
+      "tree_tokens": 290,
+      "independent_tokens": 633
+    },
+    {
+      "id": "app-login",
+      "questions": 8,
+      "tree_ms": 1895.534416893497,
+      "independent_ms": 5819.825458107516,
+      "tree_tokens": 290,
+      "independent_tokens": 633
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 8,
+      "tree_ms": 1931.9205831270665,
+      "independent_ms": 5728.634500177577,
+      "tree_tokens": 264,
+      "independent_tokens": 572
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 8,
+      "tree_ms": 1904.513416113332,
+      "independent_ms": 5657.031167065725,
+      "tree_tokens": 264,
+      "independent_tokens": 572
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 8,
+      "tree_ms": 1910.017834044993,
+      "independent_ms": 5713.320959126577,
+      "tree_tokens": 264,
+      "independent_tokens": 572
+    },
+    {
+      "id": "office-heat",
+      "questions": 8,
+      "tree_ms": 1937.1098750270903,
+      "independent_ms": 5741.146249929443,
+      "tree_tokens": 300,
+      "independent_tokens": 643
+    },
+    {
+      "id": "office-heat",
+      "questions": 8,
+      "tree_ms": 1908.2203339785337,
+      "independent_ms": 5765.69529203698,
+      "tree_tokens": 300,
+      "independent_tokens": 643
+    },
+    {
+      "id": "office-heat",
+      "questions": 8,
+      "tree_ms": 1948.3295839745551,
+      "independent_ms": 5787.314375163987,
+      "tree_tokens": 300,
+      "independent_tokens": 643
+    },
+    {
+      "id": "train-delay",
+      "questions": 8,
+      "tree_ms": 1891.824249876663,
+      "independent_ms": 5807.650166098028,
+      "tree_tokens": 265,
+      "independent_tokens": 636
+    },
+    {
+      "id": "train-delay",
+      "questions": 8,
+      "tree_ms": 1916.7377091944218,
+      "independent_ms": 5797.872958006337,
+      "tree_tokens": 265,
+      "independent_tokens": 636
+    },
+    {
+      "id": "train-delay",
+      "questions": 8,
+      "tree_ms": 1926.2154588941485,
+      "independent_ms": 5810.1218331139535,
+      "tree_tokens": 265,
+      "independent_tokens": 636
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 8,
+      "tree_ms": 1926.9391249399632,
+      "independent_ms": 5785.879084141925,
+      "tree_tokens": 275,
+      "independent_tokens": 611
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 8,
+      "tree_ms": 1903.406708035618,
+      "independent_ms": 5771.70370798558,
+      "tree_tokens": 275,
+      "independent_tokens": 611
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 8,
+      "tree_ms": 1893.291458953172,
+      "independent_ms": 5756.81595900096,
+      "tree_tokens": 275,
+      "independent_tokens": 611
+    },
+    {
+      "id": "museum-light",
+      "questions": 8,
+      "tree_ms": 1881.8263751454651,
+      "independent_ms": 5726.860374910757,
+      "tree_tokens": 263,
+      "independent_tokens": 620
+    },
+    {
+      "id": "museum-light",
+      "questions": 8,
+      "tree_ms": 1868.6956248711795,
+      "independent_ms": 5741.20720801875,
+      "tree_tokens": 263,
+      "independent_tokens": 620
+    },
+    {
+      "id": "museum-light",
+      "questions": 8,
+      "tree_ms": 1881.4108329825103,
+      "independent_ms": 5727.108875056729,
+      "tree_tokens": 263,
+      "independent_tokens": 620
+    },
+    {
+      "id": "water-bill",
+      "questions": 8,
+      "tree_ms": 1931.860333075747,
+      "independent_ms": 5799.179458990693,
+      "tree_tokens": 285,
+      "independent_tokens": 621
+    },
+    {
+      "id": "water-bill",
+      "questions": 8,
+      "tree_ms": 1948.1879170052707,
+      "independent_ms": 5805.04966690205,
+      "tree_tokens": 285,
+      "independent_tokens": 621
+    },
+    {
+      "id": "water-bill",
+      "questions": 8,
+      "tree_ms": 1932.6690000016242,
+      "independent_ms": 5747.161666862667,
+      "tree_tokens": 285,
+      "independent_tokens": 621
+    },
+    {
+      "id": "concert-sound",
+      "questions": 8,
+      "tree_ms": 1903.348500141874,
+      "independent_ms": 5786.3068748265505,
+      "tree_tokens": 275,
+      "independent_tokens": 632
+    },
+    {
+      "id": "concert-sound",
+      "questions": 8,
+      "tree_ms": 1910.1887089200318,
+      "independent_ms": 5778.750833123922,
+      "tree_tokens": 275,
+      "independent_tokens": 632
+    },
+    {
+      "id": "concert-sound",
+      "questions": 8,
+      "tree_ms": 1883.0177912022918,
+      "independent_ms": 5771.657666889951,
+      "tree_tokens": 275,
+      "independent_tokens": 632
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 16,
+      "tree_ms": 3427.345500094816,
+      "independent_ms": 11712.282082997262,
+      "tree_tokens": 517,
+      "independent_tokens": 1312
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 16,
+      "tree_ms": 3499.988791998476,
+      "independent_ms": 11875.1342499163,
+      "tree_tokens": 517,
+      "independent_tokens": 1312
+    },
+    {
+      "id": "bakery-oven",
+      "questions": 16,
+      "tree_ms": 3514.382083900273,
+      "independent_ms": 11812.564583029598,
+      "tree_tokens": 517,
+      "independent_tokens": 1312
+    },
+    {
+      "id": "library-return",
+      "questions": 16,
+      "tree_ms": 3522.632542066276,
+      "independent_ms": 11676.094708032906,
+      "tree_tokens": 542,
+      "independent_tokens": 1217
+    },
+    {
+      "id": "library-return",
+      "questions": 16,
+      "tree_ms": 3527.820833027363,
+      "independent_ms": 11786.118832882494,
+      "tree_tokens": 542,
+      "independent_tokens": 1217
+    },
+    {
+      "id": "library-return",
+      "questions": 16,
+      "tree_ms": 3457.552459090948,
+      "independent_ms": 11723.413333995268,
+      "tree_tokens": 542,
+      "independent_tokens": 1217
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 16,
+      "tree_ms": 3623.7525828182697,
+      "independent_ms": 11930.53612508811,
+      "tree_tokens": 556,
+      "independent_tokens": 1291
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 16,
+      "tree_ms": 3645.021582953632,
+      "independent_ms": 11960.713958134875,
+      "tree_tokens": 556,
+      "independent_tokens": 1291
+    },
+    {
+      "id": "cafe-wifi",
+      "questions": 16,
+      "tree_ms": 3585.2851250674576,
+      "independent_ms": 12015.679124975577,
+      "tree_tokens": 556,
+      "independent_tokens": 1291
+    },
+    {
+      "id": "bike-repair",
+      "questions": 16,
+      "tree_ms": 4093.684625113383,
+      "independent_ms": 12369.469915982336,
+      "tree_tokens": 512,
+      "independent_tokens": 1232
+    },
+    {
+      "id": "bike-repair",
+      "questions": 16,
+      "tree_ms": 3182.8782081138343,
+      "independent_ms": 11878.029375104234,
+      "tree_tokens": 512,
+      "independent_tokens": 1232
+    },
+    {
+      "id": "bike-repair",
+      "questions": 16,
+      "tree_ms": 3095.916457939893,
+      "independent_ms": 11740.96120800823,
+      "tree_tokens": 512,
+      "independent_tokens": 1232
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 16,
+      "tree_ms": 3521.1671250872314,
+      "independent_ms": 11887.584042036906,
+      "tree_tokens": 522,
+      "independent_tokens": 1287
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 16,
+      "tree_ms": 3485.514707863331,
+      "independent_ms": 11871.718666981906,
+      "tree_tokens": 522,
+      "independent_tokens": 1287
+    },
+    {
+      "id": "hotel-booking",
+      "questions": 16,
+      "tree_ms": 3484.070375096053,
+      "independent_ms": 11923.64487494342,
+      "tree_tokens": 522,
+      "independent_tokens": 1287
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 16,
+      "tree_ms": 3518.8449169509113,
+      "independent_ms": 12111.833582865074,
+      "tree_tokens": 517,
+      "independent_tokens": 1402
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 16,
+      "tree_ms": 3572.9066249914467,
+      "independent_ms": 12072.870624950156,
+      "tree_tokens": 517,
+      "independent_tokens": 1402
+    },
+    {
+      "id": "lab-freezer",
+      "questions": 16,
+      "tree_ms": 3566.146166063845,
+      "independent_ms": 12003.114332910627,
+      "tree_tokens": 517,
+      "independent_tokens": 1402
+    },
+    {
+      "id": "school-bus",
+      "questions": 16,
+      "tree_ms": 3167.991666123271,
+      "independent_ms": 11767.45166699402,
+      "tree_tokens": 477,
+      "independent_tokens": 1152
+    },
+    {
+      "id": "school-bus",
+      "questions": 16,
+      "tree_ms": 3111.940416973084,
+      "independent_ms": 11766.939707798883,
+      "tree_tokens": 477,
+      "independent_tokens": 1152
+    },
+    {
+      "id": "school-bus",
+      "questions": 16,
+      "tree_ms": 3226.04937502183,
+      "independent_ms": 11635.435083182529,
+      "tree_tokens": 477,
+      "independent_tokens": 1152
+    },
+    {
+      "id": "garden-water",
+      "questions": 16,
+      "tree_ms": 3258.0663750413805,
+      "independent_ms": 11911.383791826665,
+      "tree_tokens": 503,
+      "independent_tokens": 1223
+    },
+    {
+      "id": "garden-water",
+      "questions": 16,
+      "tree_ms": 3243.314500199631,
+      "independent_ms": 11976.230124942958,
+      "tree_tokens": 503,
+      "independent_tokens": 1223
+    },
+    {
+      "id": "garden-water",
+      "questions": 16,
+      "tree_ms": 3200.1131251454353,
+      "independent_ms": 13436.674708034843,
+      "tree_tokens": 503,
+      "independent_tokens": 1223
+    },
+    {
+      "id": "app-login",
+      "questions": 16,
+      "tree_ms": 3543.699333909899,
+      "independent_ms": 11823.605041019619,
+      "tree_tokens": 544,
+      "independent_tokens": 1279
+    },
+    {
+      "id": "app-login",
+      "questions": 16,
+      "tree_ms": 3608.965292107314,
+      "independent_ms": 11969.165957998484,
+      "tree_tokens": 544,
+      "independent_tokens": 1279
+    },
+    {
+      "id": "app-login",
+      "questions": 16,
+      "tree_ms": 3493.4115828946233,
+      "independent_ms": 12041.469125077128,
+      "tree_tokens": 544,
+      "independent_tokens": 1279
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 16,
+      "tree_ms": 3216.9505420606583,
+      "independent_ms": 11834.848292171955,
+      "tree_tokens": 484,
+      "independent_tokens": 1144
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 16,
+      "tree_ms": 3173.633791040629,
+      "independent_ms": 11647.004416910931,
+      "tree_tokens": 484,
+      "independent_tokens": 1144
+    },
+    {
+      "id": "parcel-wrong",
+      "questions": 16,
+      "tree_ms": 3152.1672080270946,
+      "independent_ms": 11750.57137501426,
+      "tree_tokens": 484,
+      "independent_tokens": 1144
+    },
+    {
+      "id": "office-heat",
+      "questions": 16,
+      "tree_ms": 3692.2288751229644,
+      "independent_ms": 11832.512957975268,
+      "tree_tokens": 563,
+      "independent_tokens": 1298
+    },
+    {
+      "id": "office-heat",
+      "questions": 16,
+      "tree_ms": 3554.8272079322487,
+      "independent_ms": 11607.436624821275,
+      "tree_tokens": 563,
+      "independent_tokens": 1298
+    },
+    {
+      "id": "office-heat",
+      "questions": 16,
+      "tree_ms": 3589.3012499436736,
+      "independent_ms": 11694.489958928898,
+      "tree_tokens": 563,
+      "independent_tokens": 1298
+    },
+    {
+      "id": "train-delay",
+      "questions": 16,
+      "tree_ms": 3091.340124839917,
+      "independent_ms": 12061.007499927655,
+      "tree_tokens": 477,
+      "independent_tokens": 1272
+    },
+    {
+      "id": "train-delay",
+      "questions": 16,
+      "tree_ms": 3137.73666578345,
+      "independent_ms": 11953.751499997452,
+      "tree_tokens": 477,
+      "independent_tokens": 1272
+    },
+    {
+      "id": "train-delay",
+      "questions": 16,
+      "tree_ms": 3157.267790986225,
+      "independent_ms": 11987.011834047735,
+      "tree_tokens": 477,
+      "independent_tokens": 1272
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 16,
+      "tree_ms": 3633.7449580896646,
+      "independent_ms": 11903.477792162448,
+      "tree_tokens": 517,
+      "independent_tokens": 1237
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 16,
+      "tree_ms": 3586.3601251039654,
+      "independent_ms": 11985.114000039175,
+      "tree_tokens": 517,
+      "independent_tokens": 1237
+    },
+    {
+      "id": "pet-clinic",
+      "questions": 16,
+      "tree_ms": 3557.186458958313,
+      "independent_ms": 12025.205083889887,
+      "tree_tokens": 517,
+      "independent_tokens": 1237
+    },
+    {
+      "id": "museum-light",
+      "questions": 16,
+      "tree_ms": 3143.7758749816567,
+      "independent_ms": 12053.345500025898,
+      "tree_tokens": 475,
+      "independent_tokens": 1240
+    },
+    {
+      "id": "museum-light",
+      "questions": 16,
+      "tree_ms": 3184.8349580541253,
+      "independent_ms": 12115.802749991417,
+      "tree_tokens": 475,
+      "independent_tokens": 1240
+    },
+    {
+      "id": "museum-light",
+      "questions": 16,
+      "tree_ms": 3231.076708994806,
+      "independent_ms": 11961.049708072096,
+      "tree_tokens": 475,
+      "independent_tokens": 1240
+    },
+    {
+      "id": "water-bill",
+      "questions": 16,
+      "tree_ms": 3629.259582841769,
+      "independent_ms": 11950.984583003446,
+      "tree_tokens": 536,
+      "independent_tokens": 1256
+    },
+    {
+      "id": "water-bill",
+      "questions": 16,
+      "tree_ms": 3739.923082990572,
+      "independent_ms": 12077.53899996169,
+      "tree_tokens": 536,
+      "independent_tokens": 1256
+    },
+    {
+      "id": "water-bill",
+      "questions": 16,
+      "tree_ms": 3554.077290929854,
+      "independent_ms": 12542.675832984969,
+      "tree_tokens": 536,
+      "independent_tokens": 1256
+    },
+    {
+      "id": "concert-sound",
+      "questions": 16,
+      "tree_ms": 3303.2993329688907,
+      "independent_ms": 12247.289416845888,
+      "tree_tokens": 499,
+      "independent_tokens": 1264
+    },
+    {
+      "id": "concert-sound",
+      "questions": 16,
+      "tree_ms": 3189.4616668578237,
+      "independent_ms": 11810.567332897335,
+      "tree_tokens": 499,
+      "independent_tokens": 1264
+    },
+    {
+      "id": "concert-sound",
+      "questions": 16,
+      "tree_ms": 3170.525041874498,
+      "independent_ms": 11918.454042170197,
+      "tree_tokens": 499,
+      "independent_tokens": 1264
+    }
+  ]
+}
