@@ -24,6 +24,8 @@ For reference, the time to answer N questions about one record in a single tree-
 
 ### NVIDIA RTX 4090
 
+![Latency vs question count on RTX 4090](docs/latency-rtx4090.png)
+
 Median request latency, PyTorch 2.10.0+cu128, public fixture (16 records × 3 repeats), model loading excluded:
 
 | Questions per record | 1 | 2 | 4 | 8 | 16 |

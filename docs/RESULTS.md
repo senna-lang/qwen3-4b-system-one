@@ -54,6 +54,8 @@ Each fixture record is asked N questions (its own branches, repeated cyclically)
 
 #### NVIDIA RTX 4090 (2026-10-02)
 
+![Latency vs question count on RTX 4090](latency-rtx4090.png)
+
 Median request latency, PyTorch 2.10.0+cu128, public fixture (16 records × 3 repeats), model loading excluded:
 
 | Questions per record | 1 | 2 | 4 | 8 | 16 |
